@@ -1,15 +1,1 @@
-{	
-	"responsive": true,
-	"tmpSocialIconFont": true,
-	"enableEditorJS": true,
-    "description": "Similar to DEFCON, but for SVTFOE.",
-    "features": [
-        "responsive", 
-        "navigation-fixed",
-        "boxed-width",
-        "css-buttons",
-        "social-icons",
-        "navigation-top",
-        "boxed-header"
-    ]
-}
+{"responsive":true,"tmpSocialIconFont":true,"enableEditorJS":true,"description":"Similar to DEFCON, but for SVTFOE.","features":["responsive","navigation-fixed","boxed-width","css-buttons","social-icons","navigation-top","boxed-header"]}
