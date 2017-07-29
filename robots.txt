@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /messages-old.html
+Disallow: /index-old.html
+Disallow: /rate-us.html
