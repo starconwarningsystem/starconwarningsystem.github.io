@@ -20,7 +20,10 @@ var filesToCache = [
   '/files/theme/plugins.js',
   '/activateserviceworker.js',
   '/files/theme/external/regular.ttf',
-  '/uploads/images/defcon-5.jpg',
+  '/uploads/images/defcon-5.jpg'
+];
+
+var urlToCache = [
   '//fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext',
   '//fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext',
   '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&subset=latin,latin-ext/',
@@ -32,7 +35,12 @@ self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(cacheName).then(function(cache) {
       console.log('[ServiceWorker] Caching app shell');
-      return cache.addAll(filesToCache, {mode: 'no-cors'});
+      return cache.addAll(filesToCache);
+      var request = new Request(urlToCache, {mode: 'no-cors'});
+      return fetch(request).then(function(response) {
+        var cachedCopy = response.clone();
+        return cache.put(request, cachedCopy);
+      });
     })
   );
 });
