@@ -20,7 +20,8 @@ var filesToCache = [
   '/files/theme/plugins.js',
   '/activateserviceworker.js',
   '/files/theme/external/regular.ttf',
-  '/uploads/images/defcon-5.jpg'
+  '/uploads/images/defcon-5.jpg',
+  '//fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext'
 ];
 
 self.addEventListener('install', function(e) {
