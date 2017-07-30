@@ -24,7 +24,6 @@ var filesToCache = [
   '//fonts.googleapis.com/css?family=Quattrocento+Sans:400,700,400italic,700italic&subset=latin,latin-ext',
   '//fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext',
   '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&subset=latin,latin-ext/',
-  '//fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext',
   '//fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext'
 ];
 
