@@ -20,8 +20,7 @@ var filesToCache = [
   '/files/theme/plugins.js',
   '/activateserviceworker.js',
   '/files/theme/external/regular.ttf',
-  '/uploads/images/defcon-5.png'
-  '/uploads/images/defcon-5.ico'
+  '/uploads/images/starcon.png'
 ];
 
 var urlToCache = [
