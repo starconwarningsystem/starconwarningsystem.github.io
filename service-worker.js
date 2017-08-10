@@ -51,7 +51,7 @@ self.addEventListener('activate', function(e) {
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
     caches.keys().then(function(cacheNames) {
-      return Promise.all(cacheNames.filter(function(cacheName) {
+      return Promise.all(cacheNames.map(function(cacheName) {
         console.log('[ServiceWorker] Removing old cache', cacheName);
         return caches.delete(cacheName);
       }))
