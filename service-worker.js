@@ -52,12 +52,12 @@ self.addEventListener('activate', function(e) {
   e.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(cacheNames.filter(function(cacheName) {
-          console.log('[ServiceWorker] Removing old cache', cacheName);
-          return caches.delete(cacheName);
-        })
-      )}
-    ));
-  });
+        console.log('[ServiceWorker] Removing old cache', cacheName);
+        return caches.delete(cacheName);
+      }))
+    })
+  );
+});
 
 self.addEventListener('fetch', function(e) {
   console.log('[ServiceWorker] Fetch', e.request.url);
