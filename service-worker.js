@@ -55,9 +55,9 @@ self.addEventListener('activate', function(e) {
           console.log('[ServiceWorker] Removing old cache', cacheName);
           return caches.delete(cacheName);
         })
-      )}));
-    })
-  );
+      )}
+    ));
+  });
   return self.clients.claim();
 });
 
