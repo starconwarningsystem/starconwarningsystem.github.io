@@ -1,4 +1,4 @@
-var cacheName = 'STARCON-2017-08-10-12-29';
+var cacheName = 'STARCON-2017-08-10-01-08';
 var filesToCache = [
   '/',
   '/index.html',
@@ -12,7 +12,6 @@ var filesToCache = [
   '/files/main_style.css',
   '/files/theme/external/font.css',
   '/files/theme/external/sites.css',
-  '/files/theme/external/analytics.js',
   '/files/theme/external/api.js',
   '/files/theme/external/jquery.min.js',
   '/files/theme/external/main.js',
