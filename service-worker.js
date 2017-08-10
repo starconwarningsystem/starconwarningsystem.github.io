@@ -41,9 +41,10 @@ self.addEventListener('install', function(e) {
         var cachedCopy = response.clone();
         return cache.put(request, cachedCopy);
       });
+    }).then(function() {
+      self.skipWaiting();
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener('activate', function(e) {
