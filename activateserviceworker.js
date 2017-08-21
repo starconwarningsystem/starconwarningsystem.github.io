@@ -1,7 +1,13 @@
 (function() {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker
-             .register('./service-worker.js')
-             .then(function() { console.log('Service Worker Registered'); });
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {
+        // Registration was successful
+        console.log('Service Worker registered');
+      }, function(err) {
+        // registration failed :(
+        console.log('Service Worker registration failed: ', err);
+      });
+    });
   }
 })();
