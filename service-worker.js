@@ -17,7 +17,6 @@ var filesToCache = [
   '/files/theme/external/main.js',
   '/files/theme/custom.js',
   '/files/theme/plugins.js',
-  '/activateserviceworker.js',
   '/files/theme/external/regular.ttf',
   '/uploads/images/starcon.png',
   '/manifest.json'
