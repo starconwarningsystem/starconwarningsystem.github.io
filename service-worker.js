@@ -1,4 +1,4 @@
-var cacheName = 'STARCON-2017-08-21-18-40';
+var cacheName = 'STARCON-2017-08-21-18-47';
 var filesToCache = [
   '/',
   '/index.html',
@@ -28,7 +28,8 @@ var urlToCache = [
   '//fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext',
   '//fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic&subset=latin,latin-ext/',
   '//fonts.googleapis.com/css?family=Actor&subset=latin,latin-ext',
-  '//www.powr.io/plugins/comments/cached_view?load=sync&index=0&unique_label=&powr_token=weebly_683304140623557845&user_label=weebly_683304140623557845_6c35bc94-d03a-4120-bbf5-a1b157607839&demo_mode=false&external_type=weebly-integrated&template_powr_token=&color=rgb(62%2C%2062%2C%2062)&backgroundColor=rgb(254%2C%20254%2C%20254)&fontFamily=%22Quattrocento%20Sans%22%2C%20sans-serif'
+  '//www.powr.io/plugins/comments/cached_view?load=sync&index=0&unique_label=&powr_token=weebly_683304140623557845&user_label=weebly_683304140623557845_6c35bc94-d03a-4120-bbf5-a1b157607839&demo_mode=false&external_type=weebly-integrated&template_powr_token=&color=rgb(62%2C%2062%2C%2062)&backgroundColor=rgb(254%2C%20254%2C%20254)&fontFamily=%22Quattrocento%20Sans%22%2C%20sans-serif',
+  '//www.powr.io/powr.js'
 ];
 
 self.addEventListener('install', function(e) {
@@ -49,7 +50,7 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('activate', function(e) {
-  var cacheWhitelist = ['STARCON-2017-08-21-18-40'];
+  var cacheWhitelist = ['STARCON-2017-08-21-18-47'];
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
     caches.keys().then(function(cacheNames) {
