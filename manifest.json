@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "uploads/images/starcon.png",
-      "sizes": "144x144",
+      "sizes": "120x120",
       "type": "image/png"
     }
   ],
