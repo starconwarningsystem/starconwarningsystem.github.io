@@ -1,4 +1,4 @@
-var cacheName = 'STARCON-2017-08-21-19-00';
+var cacheName = 'STARCON-2017-08-21-19-15';
 var filesToCache = [
   '/',
   '/index.html',
@@ -57,7 +57,7 @@ self.addEventListener('fetch', function(e) {
 });
 
 self.addEventListener('activate', function(e) {
-  var cacheWhitelist = ['STARCON-2017-08-21-19-00'];
+  var cacheWhitelist = ['STARCON-2017-08-21-19-15'];
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
     caches.keys().then(function(cacheNames) {
