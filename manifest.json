@@ -1,0 +1,14 @@
+{
+  "short_name": "STARCON WS",
+  "name": "The STARCON Warning System",
+  "icons": [
+    {
+      "src": "uploads/images/starcon.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "landscape"
+}
