@@ -1,4 +1,4 @@
-var cacheName = 'STARCON-2017-08-21-17-16';
+var cacheName = 'STARCON-2017-08-21-18-13';
 var filesToCache = [
   '/',
   '/index.html',
@@ -48,13 +48,15 @@ self.addEventListener('install', function(e) {
 });
 
 self.addEventListener('activate', function(e) {
+  var cacheWhitelist = ['STARCON-2017-08-21-18-13'];
   console.log('[ServiceWorker] Activate');
   e.waitUntil(
     caches.keys().then(function(cacheNames) {
       return Promise.all(cacheNames.map(function(cacheName) {
-        console.log('[ServiceWorker] Removing old cache', cacheName);
-        return caches.delete(cacheName);
-      }))
+        if (cacheWhitelist.indexOf(cacheName) === -1) {
+          console.log('[ServiceWorker] Removing old cache', cacheName);
+          return caches.delete(cacheName);
+      }}))
     })
   );
 });
