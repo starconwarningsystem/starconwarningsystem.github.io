@@ -1,5 +1,4 @@
 (function() {
-  window.location.reload(true);
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', function() {
       navigator.serviceWorker.register('/service-worker.js', {useCache: false}).then(function(registration) {
