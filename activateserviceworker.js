@@ -5,6 +5,7 @@
         for(let registration of registrations) {
           registration.unregister();
       }});
+      console.log('Unregistered');
       navigator.serviceWorker.register('/service-worker.js', {Cache: "max-age=0"}).then(function(registration) {
         // Registration was successful
         console.log('Service Worker registered');
