@@ -11,7 +11,7 @@
   ],
   "start_url": "/index.html",
   "display": "standalone",
-  "orientation": "natural",
+  "orientation": "any",
   "theme_color": "#0026b2",
   "background_color": "#dcdcfe"
 }
